@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    {%load static %}
+    <link rel="stylesheet" href="{% static "index.css"%}" />
+    <title>Index</title>
+    
+    <style>
+        .header {
+            height: 600px;
+            border: 5px solid;
+            padding: 160px 60px 90px;
+        }
+        .header1 {
+            height: 600px;
+            border: 5px solid;
+            padding: 160px 60px 90px;
+
+        }
+        .header2 {
+            height: 600px;
+            border: 5px solid;
+            padding: 160px 60px 90px;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+  </head>
+  <body>
+    <div style="display:flex;"> 
+        <!--Row 1 - 3 Columns (Logo, Compnay, Logout)-->
+        <div style="width:10%;" >         <!--width(or)height anyone only we have to at a time-->
+            <img src="{% static "IMG1.png" %}" alt="" height="100px">    <!--so,we are using here-->
+
+        </div>
+            
+
+        <div style="width:80%;">
+            <img src="{% static "company.png" %}" alt="" height="100px">
+        </div>
+
+        <div style="width:10%;margin-top: 30px;">
+            <h3><a href="" style="color:coral">Logout</a></h3>
+        </div>
+
+    </div>
+    <!--
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                {% load static %} <img src="{% static "company.png" %}" width="125px">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    -->
+
+    
+    <div class="header">
+        <div class="row" >
+            <div class="col-">
+                {% load static %}<img src="{% static "iit2.png" %}" alt="iit"> 
+            </div>
+            <div id="content" class="col-">
+                
+                <h1><pre>  IIT</pre></h1>
+                <h3><pre> IIT IS NOT MY DREAM, </pre></h3>
+                <h3><pre>    IT IS MY LOVE.</pre></h3>
+                <br>
+                <br>
+                <a href="{% url 'iit' %}" style="display:inline-block;
+                background:#ff523b;
+                color:#fff;
+                padding:8px 30px;
+                border-radius:30px;"> Explore More &#8594</a>
+            </div>
+        </div>
+    </div>
+    <!-- bottom -->
+    <div style="margin:80px">
+    </div>
+
+
+
+
+<!---->
+<div class="header1">
+    <div class="row">
+        
+        <div class="col-1">
+            {% load static %}<img src="{% static "nit2.png" %}" alt="nit"> 
+        </div>
+
+        <div id="content" class="col-1">
+            <h1><pre>  NIT</pre></h1>
+                <h3><pre> I KNOW I'M NOT PERFECT, </pre></h3>
+                <h3><pre>   BUT I DO MY BEST.</pre></h3>
+                <br>
+                <br>
+            <a href="{% url 'nit' %}" style="display:inline-block;
+            background:#ff523b;
+            color:#fff;
+            padding:8px 30px;
+            border-radius:30px;"> Explore More &#8594;</a>
+          </div>
+    </div>
+</div>
+    <!-- bottom -->
+    <div style="margin:80px">
+    </div>
+
+<!---->
+<div class="header2">
+    <div class="row">
+        
+        <div class="col-2">
+            {% load static %}<img src="{% static "deem.png" %}" alt="deem"> -->
+        </div>
+
+        <div id="content" class="col-2">
+            <h1><pre>  DEEMED</pre></h1>
+                <h3><pre> A UNIVERSITY SHOULD BE A PLACE OF </pre></h3>
+                <h3><pre>         LIGHT,OF LEARNING.</pre></h3>
+                <br>
+                <br>
+            <a href="{% url 'deemed' %}" style="display:inline-block;
+            background:#ff523b;
+            color:#fff;
+            padding:8px 30px;
+            border-radius:30px;position:absolute;right:65px;"> Explore More &#8594</a>
+          </div>
+    </div>
+</div>
+
+
+
+
+  </body>
+</html>
